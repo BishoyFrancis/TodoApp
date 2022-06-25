@@ -1,0 +1,32 @@
+
+.list-header{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list > li{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 30px;
+    width: 80%;
+    margin: 25px auto;
+    list-style-type: none;
+    border-radius: 25px;
+}
+
+.list > li > span{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: red;
+    overflow-wrap: break-word;
+}
+
+
+.done{
+    border-color: green !important;
+}
+
+.done span{
+    color: green !important;
+}

@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="list-header my-5">
+            <h2>Tasks</h2>
+        </div>
+        <ul class="list">
+            <li [id]="'task#'+(idx)" *ngFor="let item of items; let idx = index" #idx>   
+                <span>{{item}}</span>
+                <div class="task-buttons d-inline">
+                    <button class="btn btn-success mx-3" (click)="TaskDone(idx)"><i class="fa-solid fa-check"></i></button>
+                    <button class="btn btn-danger" (click)="TaskDelete(idx)"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div><span>COMPLETED</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
